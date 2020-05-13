@@ -4,3 +4,4 @@ def entry_point() {
         sh "curl -u $CREDENTIALS google.com"
     }
 }
+return this;
