@@ -5,3 +5,4 @@ def entry_point() {
     }
 }
 return this;
+
