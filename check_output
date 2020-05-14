@@ -1,3 +1,5 @@
 #!/usr/bin/bash
 
+echo ${args[0]}
+
 curl -u ${args[0]} "https://www.google.com"
