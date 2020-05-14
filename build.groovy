@@ -5,7 +5,7 @@ def entry_point() {
             sh "echo $pwd"
             sh "echo $WORKSPACE"
             sh "echo $CREDENTIALS"
-            sh "./check_output $CREDENTIALS"
+            sh "$WORKSPACE/jenkins-credentials-check/check_output $CREDENTIALS"
         }
     }
 }
