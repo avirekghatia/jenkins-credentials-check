@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+values = []
+
+ARGV.each do|a|
+  val = a
+  values.append(val)
+end
+
+user = values[0]
+pass = values[1]
+
+cmd = "curl -u #{user}:#{pass} \"https://www.google.com\""
+
+system(cmd)
+
