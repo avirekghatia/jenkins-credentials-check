@@ -1,16 +1,3 @@
-#!/usr/bin/env ruby
+#!/usr/bin/bash
 
-values = []
-
-ARGV.each do|a|
-  val = a
-  values.append(val)
-end
-
-user = values[0]
-pass = values[1]
-
-cmd = "curl -u #{user}:#{pass} \"https://www.google.com\""
-
-system(cmd)
-
+curl -u ${args[0]} "https://www.google.com"
