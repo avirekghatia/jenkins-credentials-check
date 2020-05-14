@@ -1,7 +1,7 @@
 def entry_point() {
     dir("$WORKSPACE/jenkins-credentials-check") {
         withCredentials([usernameColonPassword(credentialsId: 'jenkins-avirek-creds', variable: 'CREDENTIALS')]) {
-            sh "ls"
+            sh "ls -lrt"
             sh "echo $pwd"
             sh "echo $WORKSPACE"
             sh "echo $CREDENTIALS"
